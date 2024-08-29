@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freeze Enterprises</title>
+    <link rel="shortcut icon" href="src/logo.jpg" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <style>
+        @keyframes marquee {
+          0% {
+            transform: translateX(0%);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+        
+        .animate-marquee {
+          display: flex;
+          animation: marquee 20s linear infinite;
+        }
+        @keyframes fade-left {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+        </style>
+        
+</head>
+<body class="bg-cyan-100 font-serif">
+
+        <nav class="bg-transparent absolute top-0 left-0 w-full p-6 z-20">
+            <div class="text-white text-2xl font-bold flex space-x-8">
+                <img src="src/logo.jpg" alt="logo" class="w-12 rounded-md -mr-8">
+                <img src="src/fr.png" alt="name" class="w-1/4 -ml-24 m-0">
+            </div>
+            <ul class="text-white text-xl font-bold flex items-center justify-end space-x-8 -mt-9">
+                <li><a href="#service" >Services</a></li>
+                <li><a href="#About">About us</a></li>
+            </ul>
+        </nav>
+
+
+    <div class=" relative bg-[url('src/ban_img1.png')] bg-cover bg-no-repeat bg-center w-screen h-screen bg-blend-overlay ">
+        <div class="absolute inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex flex-col items-center justify-center ">
+            <h1 class="text-4xl font-bold text-white mb-6 text-opacity-95 animate-flip-down">Water heater Repair & Services at chennai</h1>
+            <h4 class="text-3xl font-thin text-opacity-75 text-white mb-6 -mt-4">Book Service in Just One Click</h4>
+            <button class="bg-sky-400 text-white px-6 py-3 rounded-lg hover:bg-blue-600 hover:transition-ease-in-out duration-700 " id="bk">
+               <a href="#book"> BOOK NOW</a>
+            </button>
+        </div>
+    </div>
+   
+    <div id="About">
+        <ul class=" list-disc text-start font-medium text-lg mx-52 mt-12">
+            <li>At Freeze Enterprises,  <b>we specialize in premium water heater service and installation.</b></li> <br>
+            <li>With years of experience in the industry, our skilled technicians ensure your water heating systems are efficient, reliable, and tailored to your needs.</li>
+            <br><li><b>We are committed to providing top-notch service</b>, from expert installations to timely repairs, all while delivering exceptional customer care.</li>
+            <br><li>At Freeze Enterprises, we understand the importance of a comfortable and functional home, and we're here to help you achieve just that.</li>
+        </ul>
+    </div>
+
+    <div id="service" class=" border mx-20 my-20 py-28 pr-7 pb-14 mt-20 pt-36 bg-slate-200 rounded-2xl shadow-2xl relative">
+        <div>
+            <h2 class="text-center font-bold text-3xl  relative -mt-28 pb-20 underline text-zinc-800">Services</h2>
+        </div>
+        <div class="flex justify-evenly">
+            <div>
+                <img src="src/I2.jpeg" alt="installation" class="w-3/4 ml-16 rounded-lg shadow-xl -mt-4 hover:scale-110 transition-ease-in-out duration-700">
+                <button class="items-stretch bg-sky-400 text-white ml-28 mt-5 px-5 py-1 rounded-md hover:bg-sky-600">Installation</button>
+            </div>
+            
+            <div>
+                <img src="src/R3.jpeg" alt="Repair" class="w-3/4 ml-24 rounded-lg shadow-xl -mt-4 hover:scale-110 transition-ease-in-out duration-700">
+                <button class="items-center bg-sky-400 text-white ml-44 mt-5 px-5 py-1 rounded-md hover:bg-sky-600">Repair</button>
+            </div>
+            <div>
+                <img src="src/R7.jpeg" alt="Repair" class="w-3/4 ml-24 rounded-lg shadow-xl -mt-4 hover:scale-110 transition-ease-in-out duration-700">
+                <button class="items-center bg-sky-400 text-white ml-40 mt-5 px-5 py-1 rounded-md hover:bg-sky-600">General Services</button>
+            </div>
+            </div>
+        </div>
+    
+<div class="border py-10 flex justify-evenly bg-teal-300 -mt-6 font-semibold text-slate-600">
+    <div class="border-x-2 px-12 py-8">
+        <div class="text-center">
+            10 years 
+        </div>
+        <div class="text-balance">
+            Of Experience
+        </div>
+    </div>
+    <div class="border-x-2 px-12 py-8">
+        <div class="text-center">
+            30 days
+        </div>
+        <div>
+            Free follow-up
+        </div>
+    </div>
+    <div class="border-x-2 px-12 py-8">
+        <div class="text-center">
+            24 Hours
+        </div>
+        <div>Super-fast service</div>
+    </div>
+</div>
+
+
+<!--Review Slider-->
+<div class="max-w-lg mx-auto py-10 relative">
+    <div class="text-center -mt-6 text-3xl font-semibold mb-10 underline">
+        Reviews
+    </div>
+    <div id="review1" class="review-card bg-white p-6 rounded-lg shadow-lg block">
+        <div class="flex items-center mb-4">
+            <img src="src/per.svg" alt="Reviewer 1" class="w-12 h-12 rounded-full mr-4">
+            <div>
+                <h3 class="text-lg font-semibold">Veerendhara Giftson</h3>
+              
+            </div>
+        </div>
+        <p class="text-gray-800">"Excellent service! Highly recommended."</p>
+    </div>
+
+    <div id="review2" class="review-card bg-white p-6 rounded-lg shadow-lg hidden">
+        <div class="flex items-center mb-4">
+            <img src="src/per.svg" alt="Reviewer 2" class="w-12 h-12 rounded-full mr-4">
+            <div>
+                <h3 class="text-lg font-semibold">Rajagopalacharya lokesh</h3>
+              
+            </div>
+        </div>
+        <p class="text-gray-800">"Very professional and timely service."</p>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <button id="prevBtn" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full mt-5">&#10094;</button>
+    <button id="nextBtn" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full mt-5">&#10095;</button>
+</div>
+
+
+<div class="min-h-screen flex items-center justify-center bg-cyan-300" id="book">
+    <div id="Book" class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
+        <h2 class="text-2xl font-bold text-center mb-6">Book a Service in Seconds</h2>
+        <form class="space-y-4">
+            <div>
+                <label for="name" class="block text-gray-700 font-medium">Name:</label>
+                <input type="text" id="fname" placeholder="Enter Name..." class="w-full mt-1 p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"/>
+            </div>
+
+            <div>
+                <label for="phone" class="block text-gray-700 font-medium">Phone No:</label>
+                <input type="tel" id="phone" placeholder="Enter Phone Number..." class="w-full mt-1 p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"/>
+            </div>
+
+            <div>
+                <label for="services" class="block text-gray-700 font-medium">Services:</label>
+                <select id="fserve" name="services" autocomplete="Instalation" enterkeyhint="done" required class="w-full mt-1 p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    <option value="No">None</option>
+                    <option value="In">Installation</option>
+                    <option value="Re">Repair</option>
+                    <option value="Gn">General Services</option>
+                </select>
+            </div>
+
+            <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Submit</button>
+        </form>
+        <h3 class="text-center text-gray-600 font-medium mt-6">Don't worry, we'll make an Inspection Call - It's Free!</h3>
+    </div>
+</div>
+
+<div class="bg-gray-100 py-4">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex overflow-hidden">
+            <!-- Wrapper for infinite loop animation -->
+            <div class="flex space-x-8 animate-marquee">
+                
+                <img src="src/b1.png" alt="Brand 1" class="h-8 w-1/2 object-contain" />
+                
+                <img src="src/b2.png" alt="Brand 2" class="h-8 w-1/2 object-contain" />
+                <img src="src/b3.png" alt="Brand 3" class="h-8 w-1/2 object-contain" />
+                <img src="src/b4.png" alt="Brand 4" class="h-8 w-1/2 object-contain" />
+                <img src="src/b5.png" alt="Brand 5" class="h-8 w-1/2 object-contain" />
+                <img src="src/b6.png" alt="Brand 6" class="h-8 w-1/2 object-contain" />
+
+                
+                <img src="src/b1.png" alt="Brand 1" class="h-8 w-auto object-contain" />
+                <img src="src/b2.png" alt="Brand 2" class="h-8 w-auto object-contain" />
+                <img src="src/b3.png" alt="Brand 3" class="h-8 w-auto object-contain" />
+                <img src="src/b4.png" alt="Brand 4" class="h-8 w-auto object-contain" />
+                <img src="src/b5.png" alt="Brand 5" class="h-8 w-auto object-contain" />
+                <img src="src/b6.png" alt="Brand 6" class="h-8 w-auto object-contain" />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="border-y-4 mt-20 bg-teal-300 mx-24 py-36 justify-evenly rounded-lg pb-10">
+    <!-- Title Section -->
+    <div class="text-center font-bold -mt-24 mb-20 text-3xl">
+        Why Us?
+    </div>
+
+    <!-- Row of Three SVGs with Text on the Right -->
+    <div class="flex flex-col items-center font-semibold space-y-8 px-10">
+                <div class="flex items-center">
+            <img src="src/safe.svg" alt="safe" class="w-16">
+            <h3 class="text-left">
+                We are committed to responding to service calls within the '24 hours' time period, ensuring our customers get fast answers to their query.
+            </h3>
+        </div>
+        <div class="flex items-center space-x-4">
+            <img src="src/home.svg" alt="home" class="w-16">
+            <h3 class="text-left">
+                Inhouse: Unlike other app-based firms, we are primarily a service-based firm with our own trained technicians and effective work environment.
+            </h3>
+        </div>
+        <div class="flex items-center space-x-4">
+            <img src="src/saftey.svg" alt="safety" class="w-16">
+            <h3 class="text-left">
+                Safe: We've made sure that all our technicians are well trained in their processes, with zero compromise on safety standards.
+            </h3>
+        </div>
+    </div>
+
+    <!-- Column of Three SVGs with Text Below -->
+    <div class="flex justify-around mb-20 font-semibold mt-10">
+        <div class="flex flex-col items-center space-x-4">
+            <img src="src/fast.svg" alt="fast" class="w-16 mb-2">
+            <h3 class="text-center">Quick Responses</h3>
+        </div>
+        <div class="flex flex-col items-center">
+            <img src="src/pay.svg" alt="pay" class="w-16 mb-2">
+            <h3 class="text-center">Easy Payment</h3>
+        </div>
+        <div class="flex flex-col items-center">
+            <img src="src/en.svg" alt="support" class="w-16 mb-2">
+            <h3 class="text-center">24/7 Support</h3>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<footer class="bg-gray-800 text-gray-400 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Company Information -->
+            <div>
+                <h3 class="text-white text-lg font-bold mb-4">Freeze Enterprises</h3>
+                <p class="text-gray-400">Bhavani nagar, Teachers colony, Kolathur, Chennai-600099</p>
+                <p class="text-gray-400">Phone: +91 9840 727176</p>
+                <p class="text-gray-400">Email: freeze.enterprises@gmail.com</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-white text-lg font-bold mb-4">Quick Links</h3>
+                <ul>
+                    <li class="mb-2"><a href="#" class="hover:text-white">About Us</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-white">Services</a></li>
+                </ul>
+            </div>
+
+            <!-- Services -->
+            <div>
+                <h3 class="text-white text-lg font-bold mb-4">Services</h3>
+                <ul>
+                    <li class="mb-2"><a href="#" class="hover:text-white">Geezer Instalation</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-white">Geezer Repairs</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div class="text-center">
+                <!-- Follow Us Heading -->
+                <h3 class="text-white text-lg font-bold mb-4 -ml-16">Follow Us</h3>
+            
+                <!-- Social Media Links -->
+                <div class="flex justify-center space-x-4">
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/freeze_enterprises/" target="_blank" class="text-gray-400 hover:text-white">
+        <img class="w-6 h-6 fill-current" src="src/ins.svg" viewBox="0 0 24 24">
+            <path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 2 .3 2.5.5.7.3 1.3.7 1.8 1.2.5.5.9 1.1 1.2 1.8.2.5.4 1.3.5 2.5.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 
+            1.2-.3 2-.5 2.5-.3.7-.7 1.3-1.2 1.8-.5.5-1.1.9-1.8 1.2-.5.2-1.3.4-2.5.5-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-2-.3-2.5-.5-.7-.3-1.3-.7-1.8-1.2-.5-.5-.9-1.1-1.2-1
+            .8-.2-.5-.4-1.3-.5-2.5-.1-1.2-.1-1.6-.1-4.8s0-3.6.1-4.8c.1-1.2.3-2 .5-2.5.3-.7.7-1.3 1.2-1.8.5-.5 1.1-.9 1.8-1.2.5-.2 1.3-.4 2.5-.5C
+            8.4 2.2 8.8 2.2 12 2.2m0-2.2C8.7 0 8.3 0 7.1.1 5.9.2 4.7.4 4 .8c-.9.3-1.7.8-2.5 1.6C.9 3.3.4 4.1.1 5 .6 7.1 0 8.3 0 12s0 
+            4.9.1 6.9c.2 1.2.4 2.4.8 3.1.3.9.8 1.7 1.6 2.5.8.8 1.6 1.3 2.5 1.6.7.3 1.9.5 3.1.8 2.1.1 3.3.1 6.9.1s4.9 0 6.9-.1c1.2-.2 2.4-.4 3.1-.8.9-.3 1.7-.8 2.5-1.6.8-.8 1.3-1.6 1.6-2.5.3-.7.5-1.9.8-3.1.1-2.1.1-3.3.1-6.9s0-4.9-.1-6.9c-.2-1.2-.4-2.4-.
+            8-3.1-.3-.9-.8-1.7-1.6-2.5-.8-.8-1.6-1.3-2.5-1.6-.7-.3-1.9-.5-3.1-.8C16.9 0 15.7 0 12 0zM12 5.8A6.2 6.2 0 0 0 5.8 12c0 3.4 2.8 6.2 6.2 6.2 3.4 0 6.2-2.8 6.2-6.2 0-3.4-2.8-6.2-6.2-6.2zm0 10.2c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm4.5-10.5c-.6
+            0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1z"/>
+        </svg>
+    </a>
+
+    <!-- Email -->
+    <a href="freezeenterprises.chennai@gmail.com" class="text-gray-400 hover:text-white">
+        <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM4 6h16v2l-8 5-8-5V6zm0 12V10l8 5 8-5v8H4z"/>
+        </svg>
+    </a>
+
+    
+    
+
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/FreezeEnterprises" target="_blank" class="text-gray-400 hover:text-white">
+        <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M22.7 0H1.3C.6 0 0 .6 0 1.3v21.3C0 23.4.6 24 1.3 24h11.5v-9.3H9.8v-3.6h3V8.4c0-3.1 1.8-4.8 4.5-4.8 1.3 0 2.4.1 2.8.1v3.3h-1.9c-1.5 0-2 .8-2 2v2.7h3.9l-.5 3.6h-3.4V24h6.7c.7 0 1.3-.6 1.3-1.3V1.3c0-.7-.6-1.3-1.3-1.3z"/>
+        </svg>
+    </a>
+</div>
+</div>
+
+        </div>
+        <div class="mt-6 border-t border-gray-700 pt-4 text-center">
+            <p class="text-gray-400">&copy; 2024 Freeze Enterprizes. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- Floating WhatsApp Button -->
+<a href="https://wa.me/+919840727176" target="_blank" 
+class="fixed bottom-4 right-4 bg-green-500 p-3 rounded-full shadow-lg hover:bg-green-600 transition-all">
+<!-- WhatsApp Icon (SVG) -->
+<img src="src/wp.png" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+    <path d="M12 0C5.37 0 0 5.373 0 12c0 2.123.552 4.093 1.515 5.82L.027 24l6.31-1.65A11.941 11.941 0 0 0 12 24c6.63 0 12-5.373 12-12S18.63 0 12 0zm5.95 16.913c-.197.554-1.15 1.082-1.586 1.123-.388.035-.765.197-2.536-.524-2.13-.883-3.48-3.07-3.58-3.206-.098-.136-.854-1.136-.854-2.168 0-1.032.57-1.536.772-1.75.197-.214.426-.268.57-.268.142 0 .285.003.41.008.133.007.3-.048.47.36.17.408.564 1.39.614 1.49.05.102.083.23.016.37-.065.14-.096.23-.192.347-.098.117-.206.26-.29.35-.1.1-.2.22-.1.36.103.142.42.65.9 1.05.616.552 1.14.724 1.29.804.156.08.246.068.34-.04.098-.105.405-.47.515-.63.117-.16.234-.13.394-.08.162.05 1.083.51 1.27.6.188.09.32.135.37.21.045.08.045.496-.154 1.05z"/>
+</svg>
+</a>
+
+<script>
+    let currentReview = 1;
+    const totalReviews = 2; 
+  
+    document.getElementById('nextBtn').addEventListener('click', () => {
+      document.getElementById(`review${currentReview}`).classList.add('hidden');
+      currentReview = currentReview < totalReviews ? currentReview + 1 : 1;
+      document.getElementById(`review${currentReview}`).classList.remove('hidden');
+    });
+  
+    document.getElementById('prevBtn').addEventListener('click', () => {
+      document.getElementById(`review${currentReview}`).classList.add('hidden');
+      currentReview = currentReview > 1 ? currentReview - 1 : totalReviews;
+      document.getElementById(`review${currentReview}`).classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>
